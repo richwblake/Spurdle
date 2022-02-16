@@ -14,5 +14,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use('/api/words', require('./routes/wordRoutes'));
+app.use('/api/dictionary', require('./routes/dictionaryWordRoutes'));
 
 app.listen(port, () => console.log(`Backend server started on port ${port}`));
